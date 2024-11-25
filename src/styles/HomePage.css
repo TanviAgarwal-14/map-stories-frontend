@@ -1,0 +1,40 @@
+.home-page {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items at the top */
+}
+
+/* Spacing for content below the navbar */
+.home-page h1 {
+  margin-top: 80px; /* Adjust to add space below the navbar */
+  font-size: 3rem;
+  font-weight: bold;
+  color: lightcoral; /* Bright orange for the main heading */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4); /* Stylish text shadow */
+}
+
+.home-page p {
+  margin-top: 10px; /* Space between h1 and p */
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #dcdcdc; /* Soft gray for text */
+}
+
+.cta-button {
+  background-color: lightcoral; /* Bright orange for the button */
+  color: #fff; /* White text */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

@@ -1,0 +1,57 @@
+/* NavBar.css */
+
+/* Main Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: lightcoral; /* Dark background */
+  color: #fff; /* White text */
+  box-shadow: 0 4px 8px rgba(218, 212, 212, 0.901); /* Subtle shadow for depth */
+  position: sticky; /* Sticks at the top while scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-logo .navbar-link {
+  text-decoration: none;
+  color: inherit; /* Inherit color from the parent */
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+  color : white;
+}
+
+.navbar-link:hover {
+  color: #ff784e; /* Slightly lighter orange */
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px; /* Reduce gap between links */
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+}
