@@ -1,65 +1,107 @@
-.your-stories-container {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .story-card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 15px;
-    background-color: #f9f9f9;
-  }
-  
-  .story-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .story-card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .story-card-description {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 10px;
-  }
-  
-  .story-card-buttons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-  }
-  
-  .story-card-button {
-    padding: 8px 12px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .story-card-button.view {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .story-card-button.view:hover {
-    background-color: #0056b3;
-  }
-  
-  .story-card-button.delete {
-    background-color: #dc3545;
-    color: white;
-  }
-  
-  .story-card-button.delete:hover {
-    background-color: #c82333;
-  }  
+/* YourStories.css */
+
+/* Overall Page Container */
+.your-stories-page {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text for contrast */
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Page Heading */
+.your-stories-page h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: lightcoral; /* Vibrant orange heading */
+  margin-top: 20px;
+  text-shadow: 2px 2px 8px rgba(255, 87, 34, 0.7); /* Glow effect */
+  text-align: center;
+}
+.your-stories-page p{
+  color: white;
+  font: 100 1.5em/1 'Roboto', sans-serif;
+}
+/* Story Cards Container */
+.story-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Story Card */
+.story-card {
+  background-color: #1a1a1a; /* Dark background for cards */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover Effect for Story Card */
+.story-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Story Card Heading */
+.story-card h3 {
+  font-size: 1.8rem;
+  color: #ff5722; /* Vibrant orange for title */
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(255, 87, 34, 0.7); /* Glow effect */
+}
+
+/* Story Card Description */
+.story-card p {
+  font-size: 1rem;
+  color: #ddd; /* Light grey description text */
+  line-height: 1.6;
+}
+
+/* Image Styling */
+.story-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow around images */
+}
+
+/* Story Card Footer */
+.story-card .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #bbb; /* Light grey footer text */
+  font-size: 0.9rem;
+}
+
+/* Button Styling for Story Card */
+.story-card .view-btn {
+  background-color: #ff5722;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.story-card .view-btn:hover {
+  background-color: #ff784e;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.story-card .view-btn:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}

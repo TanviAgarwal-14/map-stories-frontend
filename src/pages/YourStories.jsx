@@ -21,6 +21,7 @@ const YourStories = () => {
   return (
     <div className="your-stories-page">
       <h2>Your Stories</h2>
+      <p>See your saved stories here!</p>
       <div className="story-cards-container">
         {stories.map((story) => (
           <StoryCard key={story._id} story={story} />

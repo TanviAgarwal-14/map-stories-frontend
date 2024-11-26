@@ -1,6 +1,6 @@
 .home-page {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  background: url(../map.jpeg);
+  background-size: cover;
   font-family: 'Arial', sans-serif;
   min-height: 100vh;
   padding: 20px;
@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Align items at the top */
 }
 
 /* Spacing for content below the navbar */
@@ -22,9 +21,10 @@
 
 .home-page p {
   margin-top: 10px; /* Space between h1 and p */
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-family:'Courier New', Courier, monospace;
   line-height: 1.6;
-  color: #dcdcdc; /* Soft gray for text */
+  color: white; /* Soft gray for text */
 }
 
 .cta-button {
